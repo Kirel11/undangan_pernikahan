@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Faisal & Karmila</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-item">Beranda</a>
+            <a href="#story" class="nav-item">Pembukaan</a>
+            <a href="#couple" class="nav-item">Pasangan</a>
+            <a href="#events" class="nav-item">Acara</a>
+            <a href="#rsvp" class="nav-item">RSVP</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Undangan Pernikahan</h1>
+            <div class="names">Faisal & Karmila</div>
+            <div class="date">Minggu, 03 Agustus 2025</div>
+            <a href="#story" class="btn">Pembukaan</a>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="section story">
+        <h2>Pembukaan</h2>
+        <div class="story-content">
+            <p>
+              Assalamualaikum Warahmatullahi Wabarakatuh
+            </p>
+            <p>
+                Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu atau Saudara/i untuk menghadiri acara pernikahan kami.
+            </p>
+            <p>
+              وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ <br>
+Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+            </p>
+        </div>
+    </section>
+
+    <!-- Couple Section -->
+    <section id="couple" class="section">
+        <h2>Mempelai</h2>
+        <div class="couple">
+            <div class="couple-card">
+                <div class="couple-photo">K</div>
+                <div class="couple-name">Karmila</div>
+                <div class="couple-parents">Putri dari<br>Bapak ... & Ibu ...</div>
+            </div>
+            <div class="couple-card">
+                <div class="couple-photo">F</div>
+                <div class="couple-name">Faisal</div>
+                <div class="couple-parents">Putra dari<br>Bapak ... & Ibu ...</div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events">
+        <h2>Detail Acara</h2>
+        
+        <!-- Countdown -->
+        <div class="countdown-container">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Hari</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Jam</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Menit</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Detik</div>
+            </div>
+        </div>
+
+        <div class="event-cards">
+            <div class="event-card">
+                <div class="event-icon">🕌</div>
+                <div class="event-title">Akad Nikah/Resepsi</div>
+                <div class="event-details">
+                    <p><strong>Tanggal:</strong> Minggu, 03 Agustus 2025</p>
+                    <p><strong>Waktu:</strong> 10:00 - Selesai WITA</p>
+                    <p><strong>Tempat:</strong>Dusun Bontorita<br>Desa Damai Kecamatan Tanralili Kabupaten Maros</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    
+<section id="rsvp" class="section rsvp">
+  <h2>Konfirmasi Kehadiran</h2>
+  <div class="rsvp-form">
+    <form id="rsvp-form" method="post" action="https://script.google.com/macros/s/AKfycby4weO8KhzbrL0FrN5tkTRd_swwa0_xPQAhCVYYzzE-mTzfbnT3zTZudcd5sGvaab9coQ/exec">
+      <div class="form-group">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="nama" required>
+      </div>
+      <div class="form-group">
+        <label for="attendance">Konfirmasi Kehadiran</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih...</option>
+          <option value="Akan Hadir">Akan Hadir</option>
+          <option value="Tidak Dapat Hadir">Tidak dapat hadir</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Ucapan & Doa</label>
+        <textarea id="message" name="message"  rows="4" placeholder="Tuliskan ucapan dan doa terbaik untuk kami..."></textarea>
+      </div>
+      <button type="submit" class="btn" style="width: 100%;" value="Simpan Data">Kirim</button>
+      <p id="loadingMsg" style="color: gray; display: none;">⏳ Mengirim data...</p>
+    </form>
+    <p id="successMsg" style="color: green; display: none;">✅ Terima kasih! data berhasil dikirim.</p>
+  </div>
+</section>
+
+    <!-- Location Section -->
+    <section id="location" class="section location">
+        <h2>Lokasi Acara</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <h3>Akad Nikah/Resepsi</h3>
+                <p>Dusun Bontorita<br>Desa Damai Kec Tanralili Kab Maros</p>
+                <a href="https://goo.gl/maps" target="_blank" class="btn" style="margin-top: 1rem;">Buka di Google Maps</a>
+                </div>
+              <div class="map-card">
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-hearts">💖💖💖</div>
+        <p>Terima kasih atas doa dan kehadiran Anda</p>
+        <p><strong>Faisal & Karmila</strong></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            #FaisalKarmila2025 • Made with ❤️
+        </p>
+    </footer>
+ <script src="js/script.js"></script>
+</body>
+</html>
